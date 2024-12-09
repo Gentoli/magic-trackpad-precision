@@ -14,6 +14,7 @@ DEFINE_GUID(GUID_DEVICEINTERFACE_AmtPtpHidFilter,
 #define HID_VID_APPLE_USB 0x05ac
 #define HID_VID_APPLE_BT  0x004c
 #define HID_PID_MAGIC_TRACKPAD_2 0x0265
+#define HID_PID_MAGIC_TRACKPAD_2C 0x0324
 
 /* device-specific parameters */
 typedef struct _BCM5974_PARAM {

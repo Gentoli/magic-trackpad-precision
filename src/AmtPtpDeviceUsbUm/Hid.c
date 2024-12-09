@@ -123,6 +123,7 @@ AmtPtpGetHidDescriptor(
 			break;
 		}
 		case USB_DEVICE_ID_APPLE_MAGICTRACKPAD2:
+		case USB_DEVICE_ID_APPLE_MAGICTRACKPAD2C:
 		{
 			TraceEvents(
 				TRACE_LEVEL_INFORMATION,
@@ -331,6 +332,7 @@ AmtPtpGetReportDescriptor(
 			break;
 		}
 		case USB_DEVICE_ID_APPLE_MAGICTRACKPAD2:
+		case USB_DEVICE_ID_APPLE_MAGICTRACKPAD2C:
 		{
 			szHidDescriptor = AmtPtpMt2DefaultHidDescriptor.DescriptorList[0].wReportLength;
 			pSelectedHidDescriptor = AmtPtpMt2ReportDescriptor;

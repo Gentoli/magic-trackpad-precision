@@ -310,7 +310,7 @@ PtpFilterConfigureMultiTouch(
         status = STATUS_NOT_SUPPORTED;
         goto exit;
     }
-    if (deviceContext->ProductID != HID_PID_MAGIC_TRACKPAD_2) {
+    if (deviceContext->ProductID != HID_PID_MAGIC_TRACKPAD_2 || deviceContext->ProductID != HID_PID_MAGIC_TRACKPAD_2C) {
         TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, "%!FUNC! Product not supported: 0x%x", deviceContext->ProductID);
         status = STATUS_NOT_SUPPORTED;
         goto exit;
